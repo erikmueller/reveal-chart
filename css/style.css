@@ -1,0 +1,25 @@
+.reveal h1, .reveal h2, .reveal h3, .reveal p, .reveal ul {
+    font-weight: lighter;
+    font-family: 'Helvetica';
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+    margin-bottom: 0.7em;
+}
+
+.reveal p, .reveal ul {
+    font-size: 0.7em;
+    margin: 0 0 0.8em 0.8em
+}
+
+.reveal li {
+    margin: 0 0 inherit inherit
+}
+
+.reveal li ul {
+    margin: 0.3em 0 0.2em inherit
+}
+
+.reveal li ul li {
+    margin: 0 0 0.3em 0.8em
+}

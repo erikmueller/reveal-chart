@@ -1,4 +1,27 @@
 [
-    "index.md",
-    "jira-metrics.html"
+    {
+        "filename": "index.html",
+        "attr": {
+            "data-state": "index"
+        }
+    },
+    {
+        "filename": "jira-metrics.html",
+        "attr": {
+            "data-state": "jira-metrics"
+        }
+    },
+    {
+        "filename": "sonar-metrics.html",
+        "attr": {
+            "data-state": "sonar-metrics"
+        }
+    },
+    {
+        "filename": "git-metrics.html",
+        "attr": {
+            "data-state": "git-metrics"
+        }
+    },
+    "test-slide.md"
 ]

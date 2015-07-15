@@ -13,7 +13,8 @@
 
         <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.css">
 
-        <link rel="stylesheet" href="bower_components/reveal.js/css/theme/league.css" id="theme">
+        <link rel="stylesheet" href="bower_components/reveal.js/css/theme/white.css" id="theme">
+        <link rel="stylesheet" href="css/style.css">
 
 
         <!-- For syntax highlighting -->
@@ -55,12 +56,15 @@
 
         </div>
 
+        <script src="config.js"></script>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/reveal.js/lib/js/head.min.js"></script>
         <script src="bower_components/reveal.js/js/reveal.js"></script>
-        <script src="bower_components/chartjs/Chart.min.js"></script>
+        <script src="bower_components/highcharts/highcharts.js"></script>
         <script src="bower_components/lodash/lodash.min.js"></script>
+        <script src="js/helpers.js"></script>
         <script>
-            
+
           // Full list of configuration options available at:
           // https://github.com/hakimel/reveal.js#configuration
           Reveal.initialize({
@@ -83,6 +87,11 @@
             ]
           });
 
+          // Add listeners for executing dom and highchart magic
+          Reveal.addEventListener('index', insertTimeframe);
+          Reveal.addEventListener('jira-metrics', createJiraMetrics);
+          Reveal.addEventListener('sonar-metrics', createSonarMetrics);
+          Reveal.addEventListener('git-metrics', createGitMetrics);
         </script>
     </body>
 
